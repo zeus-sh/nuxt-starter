@@ -1,0 +1,36 @@
+{
+    "name": "<Project Name>",
+    "dockerComposeFile": "./docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspaces/<Project Folder>",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-outside-of-docker": {},
+        "ghcr.io/meaningful-ooo/devcontainer-features/fish": {}
+    },
+    "postCreateCommand": "fish -c 'fisher install pure-fish/pure'",
+    "postStartCommand": "npm i",
+    "remoteUser": "node",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "EditorConfig.EditorConfig",
+                "mhutchie.git-graph",
+                "naumovs.color-highlight",
+                "dbaeumer.vscode-eslint",
+                "antfu.goto-alias",
+                "christian-kohler.path-intellisense",
+                "esbenp.prettier-vscode",
+                "yoavbls.pretty-ts-errors",
+                "dannyconnell.split-html-attributes",
+                "jock.svg",
+                "bradlc.vscode-tailwindcss",
+                "ChakrounAnas.turbo-console-log",
+                "znck.vue",
+                "Vue.volar",
+                "rangav.vscode-thunder-client",
+                "antfu.iconify"
+            ]
+        }
+    }
+}

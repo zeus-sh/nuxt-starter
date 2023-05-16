@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  app:
+    image: node:lts
+    volumes:
+      - ..:/workspaces/<Project Folder>
+      - ~/.ssh:/home/node/.ssh
+    command: tail -f /dev/null
